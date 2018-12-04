@@ -1,0 +1,30 @@
+{
+    "name": "soy-code",
+    "displayName": "Soy Code",
+    "description": "Language support for Soy",
+    "version": "0.0.1",
+    "publisher": "zavoky",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Zavoky/soy-code.git"
+    },
+    "engines": {
+        "vscode": "^1.29.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "soy",
+            "aliases": ["Soy", "soy"],
+            "extensions": [".soy"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "soy",
+            "scopeName": "text.html.soy",
+            "path": "./syntaxes/soy.tmLanguage.json"
+        }]
+    }
+}
